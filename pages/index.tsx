@@ -24,8 +24,8 @@ const Index = () => {
         <title>Mathieu Bot-Côté</title>
       </Head>
 
-      <div className="photo" />
       <div className="content">
+        <div className="photo" />
         <TransitionGroup className="container-bockerie">
           <CSSTransition
             key={phrase}
@@ -162,7 +162,7 @@ const Index = () => {
           color: #444;
           font-size: 12px;
           text-align: center;
-          margin: 4px 0 12px;
+          margin: auto auto 12px;
         }
 
         footer p {
