@@ -23,8 +23,13 @@ export default {
     "#groupe#",
     "#groupe#",
     "#groupe#",
+    "#groupe#",
+    "#groupe#",
+    "#groupe#",
     "#groupe#, aidés par #groupe#,",
     "#groupe# et #groupe#",
+    "#groupe#, donc #groupe#,",
+    "#groupe#, c'est à dire #groupe#, #groupe#,",
   ],
 
   groupe: [
@@ -119,11 +124,14 @@ export default {
     "l'ordre établi",
     "l'aristocratie en place",
     "les défenseurs de la démocratie",
+    "le couple traditionnel",
   ],
 
   mechant: ["#groupe#"],
 
   scenario: [
+    // Tricherie: Augmenter les chances d'une formule
+    // particulière en la dédoublant
     "#preface# #sujet# #mechancete#.",
     "#preface# #sujet# #mechancete#.",
     "#preface# #sujet# #commiseration#.",
