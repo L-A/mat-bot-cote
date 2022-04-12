@@ -32,11 +32,13 @@ const Index = () => {
             timeout={transitionTime}
             classNames="fade"
           >
-            <div className="bockerie">
-              <div className="shift">
-                <Point />
+            <div className="centerer">
+              <div className="bockerie">
+                <div className="shift">
+                  <Point />
+                </div>
+                <p>{phrase}</p>
               </div>
-              <p>{phrase}</p>
             </div>
           </CSSTransition>
         </TransitionGroup>
@@ -83,15 +85,16 @@ const Index = () => {
           overflow: hidden;
           display: flex;
           flex-direction: column;
+          padding: 8px;
         }
 
         .photo {
-          margin: 8px auto;
-          width: 100%;
-          height: 50vh;
-          max-height: 50vh;
-          flex: 1;
+          margin: auto auto 0;
+          width: 100vw;
           max-width: 40rem;
+          height: 50vh;
+          max-height: 400px;
+          flex: 1;
           border-radius: 4px;
           box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 
@@ -113,8 +116,8 @@ const Index = () => {
           margin: 0 auto 0;
         }
 
-        .container-bockerie {
-          min-height: 10rem;
+        :global(.container-bockerie) {
+          height: 10rem;
           position: relative;
         }
 
@@ -125,6 +128,17 @@ const Index = () => {
           position: absolute;
 
           z-index: 1;
+        }
+
+        .centerer {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .bockerie p {
@@ -147,7 +161,7 @@ const Index = () => {
           padding: 8px 16px;
           font-size: 16px;
           max-width: 20rem;
-          margin: 11rem auto 16px;
+          margin: 8px auto 16px;
         }
 
         button:hover {
@@ -175,7 +189,7 @@ const Index = () => {
 
         @media (max-width: 660px) {
           .photo {
-            margin: 8px;
+            margin: 0;
             max-width: calc(100vw - 16px);
           }
 
