@@ -92,8 +92,7 @@ const Index = () => {
           max-height: 50vh;
           flex: 1;
           max-width: 40rem;
-          border-bottom-left-radius: 4px;
-          border-bottom-right-radius: 4px;
+          border-radius: 4px;
           box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 
           background: url(/mbc-figaro.webp) center no-repeat;
@@ -140,14 +139,23 @@ const Index = () => {
 
         button {
           appearance: none;
-          border: solid 1px #ddd;
+          background-color: #fff;
+          border: solid 1px #c77;
           border-radius: 8px;
-          color: #000;
+          color: #633;
           display: block;
           padding: 8px 16px;
           font-size: 16px;
           max-width: 20rem;
-          margin: auto auto 16px;
+          margin: 11rem auto 16px;
+        }
+
+        button:hover {
+          background-color: #eee;
+        }
+
+        button:active {
+          background-color: #ddd;
         }
 
         footer {
@@ -176,7 +184,7 @@ const Index = () => {
           }
 
           .bockerie {
-            font-size: 17px;
+            font-size: 16px;
           }
         }
 
